@@ -18,7 +18,7 @@ def upload_view(request):
     # muestra últimos 5 archivos
     last_uploads = Upload.objects.order_by('-uploaded_at')[:5]
 
-    return render(request, 'upload.html', {
+    return render(request, 'upload/upload.html', {
         'form': form,
         'uploaded': uploaded,
         'uploads': last_uploads

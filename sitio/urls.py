@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('uploads.urls')),  # <-- rutas de la app
+    path('', include('upload.urls')),  # <-- rutas de la app
 ]
 
 if settings.DEBUG:
